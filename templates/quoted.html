@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+<div class="mb-3">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Symbol</th>
+        </tr>
+        <tr>
+            <td>{{ val.name }}</td>
+            <td>{{ val.price }}</td>
+            <td>{{ val.symbol }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

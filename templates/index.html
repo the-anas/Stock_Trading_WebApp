@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <h1>Portfolio</h1>
+    <table>
+        <tr>
+            <th>Stock name</th>
+            <th>Symbol</th>
+            <th>Shares owned</th>
+            <th>Current price</th>
+            <th>Total</th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock['name'] }}</td>
+            <td>{{ stock['symbol'] }}</td>
+            <td>{{ stock['shares'] }}</td>
+            <td>{{ stock['price'] }}</td>
+            <td>{{ stock['total'] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td>Cash balance</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ balance }}</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ T }}</td>
+        </tr>
+    </table>
+    <form method="get" action="/changepassword">
+        <button type="submit">Change password</button>
+    </form>
+{% endblock %}
