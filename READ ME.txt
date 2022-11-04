@@ -1,0 +1,10 @@
+This project is my own impelementation of CS50x week 9 problem set. 
+
+This project is a web application that allows you, after making an account and logging in, to virtually trade stocks. Its backed is built using
+Flask and sqlite. 
+
+To run the web application locally, install all the requirements and then use the command 'Flask run'.
+
+Note that distribution code was provided. To view the distribution code or know more about this project,
+visit the following link:
+https://cs50.harvard.edu/x/2022/psets/9/finance/
